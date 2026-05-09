@@ -13,13 +13,13 @@ body {background-color: white;}
     background-color: pink;
     font-family: cursive;
 }
-/*Menú de navegación gris con fondo negro y tipografía new roman*/
+/*Menú de navegación blanco con fondo negro y tipografía new roman*/
 ul {
-    color: gray;
+    color: white;
     background-color: black;
     font-family: 'Times New Roman';
 }
-/*Párrafo negro con fondo azul*/
+/*Párrafo negro con fondo blanco*/
 p {
     color: black;
     background-color: white;
