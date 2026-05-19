@@ -28,3 +28,9 @@ p {
     background-color: white;
     font-family: fantasy;
 } 
+/*Tamaño de las imágenes*/
+.imagen{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
