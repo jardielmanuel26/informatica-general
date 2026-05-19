@@ -1,0 +1,30 @@
+/*Estilos Pink Floyd The Wall Alan Parker*/
+/*Imagen y color de fondo de la página*/
+body {
+    background-color: white;
+    background-image: url("../img/fondo_de_la_página.jpg");
+}
+/*Títulos, subtitulos y párrafos negros con fondo rojo y tipografia Arial*/
+.rojo {
+    color: black;
+    background-color: red;
+    font-family: Arial;
+}
+/*Pie de página rojo, con fondo rosa y tipografia cursive*/
+#rosa{
+    color: red;
+    background-color: pink;
+    font-family: cursive;
+}
+/*Menú de navegación blanco con fondo negro y tipografía new roman*/
+ul {
+    color: white;
+    background-color: black;
+    font-family: 'Times New Roman';
+}
+/*Párrafo negro con fondo blanco*/
+p {
+    color: black;
+    background-color: white;
+    font-family: fantasy;
+} 
