@@ -1,1 +1,5 @@
 /*Estilos CSS practica 13*/
+#contenedor {
+    width: 100%;
+    max-width: 960px;
+}
