@@ -1,0 +1,183 @@
+/*Estilos generales CSS práctica 13*/
+
+/* ==========================================================================
+   Estilos generales - Identidad Carioca (Calmada y Festiva)
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Un fondo de arena de playa muy suave para transmitir calma */
+    background-color: #f7f5f0; 
+    font-family: 'DM Sans', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 1000px; /* Un poco más amplio para que respire el diseño */
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra suave para darle modernidad */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Header y Navegación (El Sol y el Mar)
+   ========================================================================== */
+
+header {
+    /* Gradiente que simula el amanecer/atardecer en Copacabana */
+    background: linear-gradient(135deg, #00b4db, #0083b0); 
+    color: #ffffff;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Menú de navegación flotante y alegre */
+nav {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px); /* Efecto moderno de vidrio esmerilado */
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Animación suave al pasar el mouse */
+    border-radius: 20px;
+}
+
+/* Estados de los enlaces basados en el amarillo festivo del sol y la bandera */
+nav a:link, nav a:visited {
+    color: #ffffff;
+} 
+
+nav a:hover, nav a:active {
+    background-color: #ffcc00; /* Amarillo vibrante festivo */
+    color: #005580;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Contenido Principal (Main, Secciones y Tarjetas)
+   ========================================================================== */
+
+main {
+    padding: 2.5rem;
+    background: #ffffff;
+}
+
+/* Tipografías de los títulos */
+h2 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #007399; /* Azul océano */
+    border-bottom: 3px solid #ffcc00; /* Subrayado alegre */
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #0083b0;
+    margin-top: 2rem;
+}
+
+h4, h5 {
+    font-family: 'Barlow', sans-serif;
+    color: #e65c00; /* Naranja cálido para subsecciones o notas festivas */
+}
+
+/* Estilo para las imágenes turísticas */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Hace que las imágenes sean responsivas y no se deformen */
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Videos responsivos */
+iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilización de bloques complementarios (asides y articles de opinión) */
+aside, section article {
+    background-color: #fcf8e3; /* Crema cálido y amigable */
+    border-left: 5px solid #ffcc00; /* Detalle en amarillo sol */
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    text-align: left; /* Cambiado a la izquierda para mejor legibilidad */
+}
+
+/* Quitar el estilo por defecto de itálicas y negritas en títulos si se usaron tags semánticos */
+h2 em, h3 em, h4 em, h2 strong, h3 strong {
+    font-style: normal;
+    font-weight: inherit;
+    color: inherit;
+}
+
+/* ==========================================================================
+   Footer (Cierre calmado)
+   ========================================================================== */
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+// Declaración de uso de IA: Se usó la IA para mejorar los estilos de la página web y darle una identidad visual más turística.
