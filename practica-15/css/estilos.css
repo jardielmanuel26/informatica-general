@@ -1,0 +1,29 @@
+/*Estilos práctica 15*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    background-color: brown;
+}
+
+#contenedor {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1,h2,h3 {
+    background-color: yellow;
+}
+
+p {
+    color: red;
+    background-color: white;
+}
+
+header,footer {
+    background-color: orange;
+}
