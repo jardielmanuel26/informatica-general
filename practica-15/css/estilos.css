@@ -15,13 +15,13 @@ body {
     margin: 0 auto;
 }
 
-h1,h2,h3 {
+h2,h3 {
     background-color: yellow;
 }
 
-p {
+section p {
     color: red;
-    background-color: white;
+    background-color: black;
 }
 
 header,footer {
