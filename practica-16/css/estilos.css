@@ -1,0 +1,17 @@
+/*Estilos práctica 16*/
+body { background-image: url("../img/imagen_de_\ fondo.jpg");}
+
+header {
+    background-color: gray;
+}
+
+p { color: red;
+    background-color: black;
+}
+
+section { background: none;
+}
+
+h2 {
+    background-color: gray;
+}
