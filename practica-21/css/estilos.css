@@ -9,7 +9,7 @@ body{
     padding: 0;
     background-color: #F58427;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ED2812;
+    color: #AAD03E;
     line-height: 1.5;
 }
 
@@ -52,6 +52,7 @@ h2, h3, h4{
 }
 
 section{
+    color: #000;
     background-color: #fcf8e3; 
     border-left: 5px;
     padding: 1.5rem;
