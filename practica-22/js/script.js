@@ -1,0 +1,1 @@
+/* Práctica 22 - JavaScript*/
