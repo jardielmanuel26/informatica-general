@@ -2,19 +2,27 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link href="" rel="stylesheet">
+        <link href="./css/estilos.css" rel="stylesheet">
         <title>Práctica 22</title>
     </head>
     <body>
         <header>
-            <h1></h1>
+            <h1>Precio con descuento</h1>
         </header>
         <main>
             <div id="contenedor">
-                
+                <form>
+                    <input type="number" name="num1" id="num1" placeholder="Ingrese el precio">
+                    <br>
+                    <input type="number" name="num2" id="num2" placeholder="Ingrese el porcentaje de descuento">
+                    <br>
+                    <button type="button" name="calcular" id="calcular">Calcular</button>
+                    <br>
+                    <input type="number" name="resultado" id="resultado" placeholder="Aquí verá el resultado" disabled>
+                </form>
             </div>
         </main>
         <footer><p>Escrito por Manuel Yujra</p></footer>
-        <script src=""></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>

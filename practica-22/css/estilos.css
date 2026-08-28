@@ -13,14 +13,18 @@ body{
     line-height: 1.5;
 }
 
-/*#contenedor{
-    width: 100%;
+#contenedor{
+    width: 300%;
     max-width: 1000px;
     margin: 2rem auto;
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-}*/
+}
+
+#contenedor form #num2{
+    overflow: visible;
+}
 
 header{
     background-color: #D1761A;
