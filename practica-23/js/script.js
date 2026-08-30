@@ -52,7 +52,7 @@ let minPupitres = a001;
         salonMin = "Salon 501";
     }
 
-// Calculo cuántos pupitres hay que comprar para llegar a 80 por salón.
+// Calculo cuántos pupitres hay que comprar para llegar a 80 por aula.
     let faltantesA001 = 0;
     let faltantesA101 = 0;
     let faltantesA201 = 0;
