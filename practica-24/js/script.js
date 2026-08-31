@@ -10,7 +10,7 @@ let numeroAzar = Math.floor(Math.random() * 6) + 1;
 let imgDado = document.querySelector("#imagendado");
 
 //Modifico el atributo "src" de la imagen con el número obtenido
-imgDado.src = numeroAzar + ".png"
+imgDado.src = "./img/" + numeroAzar + ".png";
 }
 
 //Defino el evento para llevar a cabo toda la función.
