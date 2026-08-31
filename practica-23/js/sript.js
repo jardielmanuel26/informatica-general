@@ -1,14 +1,14 @@
 //Práctica 23 - JavaScript
 
 //Declaro una función para agrupar el código y evitar que se ejecute al cargar la página
-//function calcularPupitres(){
+function calcularPupitres(){
 
-//Capturo los elementos
-let a001 = document.querySelector("#salon001");
-let a101 = document.querySelector("#salon101");
-let a201 = document.querySelector("#salon201");
-let a301 = document.querySelector("#salon301");
-let a501 = document.querySelector("#salon501");
+// Capturo los elementos, accedo a sus valores (.value) y los convierto a tipo número
+    let a001 = Number(document.querySelector("#salon001").value);
+    let a101 = Number(document.querySelector("#salon101").value);
+    let a201 = Number(document.querySelector("#salon201").value);
+    let a301 = Number(document.querySelector("#salon301").value);
+    let a501 = Number(document.querySelector("#salon501").value);
 
 //Determino el salon con más pupitres y cuántos tiene.
 let maxPupitres = a001;
@@ -83,6 +83,6 @@ let minPupitres = a001;
         "<p><strong>Salon con más pupitres:</strong> " + salonMax + " (" + maxPupitres + " pupitres)</p>" +
         "<p><strong>Salon con menos pupitres:</strong> " + salonMin + " (" + minPupitres + " pupitres)</p>" +
         "<p><strong>Pupitres a comprar:</strong> Se deben comprar " + totalAComprar + " pupitres en total para completar 80 en todos los salones.</p>";
-//}
+}
 
 
