@@ -11,7 +11,7 @@ function recomendarSerie(event) {
 
   // Capturamos los valores de los campos
   let nombre = document.querySelector("#nombre").value;
-  let edad = document.querySelector(Number("#edad")).value;
+  let edad = Number(document.querySelector("#edad").value);
   let genero = document.querySelector("#generoSerie").value;
 
   let serieSugerida = "";
@@ -50,8 +50,8 @@ function recomendarSerie(event) {
   }
 
   // Mostramos el mensaje con el saludo y la sugerencia
-  mensajeResultado.textContent = "¡Hola " + nombre + "Según tu edad" + edad + "y tu género preferido, te sugerimos ver: " + serieSugerida ;
+  mensajeResultado.textContent = "Hola " + nombre + ". Según tu edad (" + edad + " años ) y tu género preferido, te sugerimos ver: " + serieSugerida ;
 }
 
-// Escuchamos el evento button del formulario
-formulario.addEventListener("button", recomendarSerie);
+// Escuchamos el evento submit del formulario
+formulario.addEventListener("submit", recomendarSerie);
