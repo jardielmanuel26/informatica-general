@@ -11,14 +11,25 @@
         </header>
         <main>
                <form>
+                <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Ingresar nombre">
                 <br>
-                <input type="text" name="edad" id="edad" placeholder="Ingresar edad">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" placeholder="Ingresar edad">
                 <br>
-                <input type="text" name="genero serie" id="generoSerie" placeholder="Ingresar género de serie">
+                <label for="generoSerie">Género favorito:</label>
+                <select name="genero serie" id="generoSerie">
+                    <option value="comedia">Comedia</option>
+                    <option value="accion">Accion</option>
+                    <option value="romance">Romance</option>
+                    <option value="terror">Terror</option>
+                    <option value="documental">Documental</option>
+                </select>
+
+                <button type="button">Obtener recomendación de serie</button>
                 <br>  
                </form> 
-               
+
             <div id="resultado"></div>
         </main>
         <footer><p>Hecho por Manuel Yujra</p></footer>
