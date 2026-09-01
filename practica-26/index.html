@@ -3,15 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <link href="" rel="stylesheet">
-        <title>Práctica 25</title>
+        <title>Práctica 26</title>
     </head>
     <body>
         <header>
-            <h1>Recomendación de series</h1>
+            <h1>Presupuesto para el montaje de una obra de arte multimedia</h1>
         </header>
         <main>
-               <form id="formSeries">
-                
+               <form id="formPresupuesto">
+                <label for="proyectores">Cantidad de proyectores a alquilar ($45.000/dia):</label>
+                <input type="number" name="proyectores" id="proyectores" placeholder="ingresar cantidad">
+
+                <label for="computadoras">Cantidad de computadoras a alquilar ($50.000/dia):</label>
+                <input type="number" name="computadoras" id="computadoras" placeholder="ingresar cantidad">
+
+                <label for="pantallas">Cantidad de pantallas a alquilar ($35.000/dia):</label>
+                <input type="number" name="pantallas" id="pantallas" placeholder="ingresar cantidad">
+
+                <label for="dias">Cantidad de dias alquilando el equipo:</label>
+                <input type="number" name="dias" id="dias" placeholder="ingresar cantidad">
+
+                <button type="submit">Calcular presupuesto</button>
                </form> 
 
             <div id="resultado"></div>
