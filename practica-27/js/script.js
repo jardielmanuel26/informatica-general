@@ -57,3 +57,7 @@ let precios = [];
         "<p><strong>Precio del libro más barato:</strong> $" + precioMasBarato + "</p>" +
         "<p><strong>Promedio por libro:</strong> $" + promedioPrecio + "</p>";
 }
+
+// Vinculación del evento desde JavaScript
+let botonIngresar = document.querySelector("#btn-ingresar");
+botonIngresar.onclick = generarInforme;
