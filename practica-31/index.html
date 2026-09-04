@@ -2,19 +2,33 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <link href="" rel="stylesheet">
+        <link href="./css/estilos.css" rel="stylesheet">
         <title>Práctica 31</title>
     </head>
     <body>
         <header>
             <h1>Compras de clientes</h1>
-        </header>
-        <main>
-               
 
-            <div id="resultado"></div>
-        </main>
+    <!-- Formulario para ingreso de datos -->
+    <form id="formularioCompra">
+        <label for="nombre">Nombre del cliente:</label>
+        <input type="text" name="nombre" id="nombre" >
+
+        <label for="monto">Monto de la compra:</label>
+        <input type="number" name="monto" id="monto">
+
+        <button type="button" name="btnAgregar" id="btnAgregar">Agregar Cliente</button>
+    </form>
+
+    <!-- Botones de acciones e informes -->
+    <div class="acciones">
+        <button type="button" id="btnCalcularPromedio">Calcular Totales y Promedio</button>
+        <button type="button" id="btnDescuento">Aplicar Descuento a Mayor Comprador</button>
+    </div>
+
+    <!-- Resultados en la página -->
+    <div id="resultados"></div>
         <footer><p>Hecho por Manuel Yujra</p></footer>
-        <script src=""></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
