@@ -22,7 +22,7 @@ let preguntas = [
     let respuestasCorrectas = [
         "1821",
         "10",
-        "Buenos Aires",
+        "buenos aires",
         "azul",
         "español",
         "366",
@@ -54,6 +54,6 @@ let preguntas = [
     }
 
     // Mostrar el resultado final en el HTML
-    let Resultados = document.querySelector("#resultados");
-    Resultado.innerHTML = "Has contestado correctamente " + contadorCorrectas + " de " + preguntas.length + " preguntas.";
+    let resultados = document.querySelector("#resultados");
+    resultados.innerHTML = "Has contestado correctamente " + contadorCorrectas + " de " + preguntas.length + " preguntas.";
 })
