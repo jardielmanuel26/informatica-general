@@ -5,12 +5,12 @@ let numeroApostado = 1; // Apuesta inicial por defecto
 // Array con las rutas de las imágenes de los dados (del 1 al 6)
 const imagenesDados = [
   '',
-  "img/dado1.png"
-  'img/dado2.png',
-  'img/dado3.png',
-  'img/dado4.png',
-  'img/dado5.png',
-  'img/dado6.png'
+  'img/1.png',
+  'img/2.png',
+  'img/3.png',
+  'img/4.png',
+  'img/5.png',
+  'img/6.png'
 ];
 
 // Función para seleccionar la apuesta al presionar un botón
@@ -29,9 +29,6 @@ function seleccionarApuesta(numero) {
     }
   }
 }
-
-// Inicializar resaltado visual en el primer botón
-seleccionarApuesta(1);
 
 // Función principal para tirar los 5 dados al azar
 function tirarDados() {
@@ -53,15 +50,31 @@ function tirarDados() {
     // Se genera un id único identificando si coincide o no
     let idDado = (valorDado === numeroApostado) ? "dado-" + (i + 1) + "-coincide" : "dado-" + (i + 1);
 
-    // Se inserta la etiqueta <img> dentro del HTML
+// Se inserta la etiqueta <img> dentro del HTML
     contenedor.innerHTML += `
-      <div id="idDado">
-        <img src="imagenesDados[valorDado]" alt="Dado valorDado">
+      <div id="${idDado}">
+        <img src="${imagenesDados[valorDado]}" alt="Dado ${valorDado}">
       </div>
     `;
+
   }
 
   // Mostrar mensaje final en el contenedor del id resultados
-  let mensaje = document.querySelector("#resultados");
-  mensaje.innerText = "Apostaste al" + numeroApostado +. "Coincidieron" + contadorCoincidencias + "de 5 dados.";
+  let mensaje = document.getElementById("resultados");
+  mensaje.innerText = "Apostaste al " + numeroApostado + ". Coincidieron " + contadorCoincidencias + " de 5 dados.";
 }
+
+// Asignamos el evento click a los 6 botones de apuesta usando un ciclo for
+for (let i = 1; i <= 6; i++) {
+  let boton = document.querySelector("#btn-dado-" + i);
+  boton.addEventListener("click", function() {
+    seleccionarApuesta(i);
+  });
+}
+
+// Asignamos el evento click al botón de tirar los dados
+let btnTirar = document.querySelector("#btn-tirar");
+btnTirar.addEventListener("click", tirarDados);
+
+// Inicializar resaltado visual en el primer botón al cargar la página
+seleccionarApuesta(1);
