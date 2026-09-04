@@ -1,1 +1,166 @@
-/*Estilos generales - Práctica 29*/
+/*Estilos generales - Práctica 30*/
+
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #1e293b;
+  --border: #e2e8f0;
+  --match-color: #10b981;
+  --match-bg: #ecfdf5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  line-height: 1.5;
+}
+
+#contenedor-principal {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#encabezado {
+  text-align: center;
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+#tarjeta-juego {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#panel-controles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#grupo-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos de cada botón de apuesta utilizando id */
+#btn-dado-1,
+#btn-dado-2,
+#btn-dado-3,
+#btn-dado-4,
+#btn-dado-5,
+#btn-dado-6 {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  background: white;
+  color: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#btn-dado-1:hover,
+#btn-dado-2:hover,
+#btn-dado-3:hover,
+#btn-dado-4:hover,
+#btn-dado-5:hover,
+#btn-dado-6:hover {
+  background: #e0e7ff;
+}
+
+#btn-tirar {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#btn-tirar:hover {
+  background: var(--primary-hover);
+}
+
+#dados {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  min-height: 100px;
+}
+
+/* Estilos de los contenedores de dado generados dinámicamente con id */
+#dado-1, #dado-2, #dado-3, #dado-4, #dado-5,
+#dado-1-coincide, #dado-2-coincide, #dado-3-coincide, #dado-4-coincide, #dado-5-coincide {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  border: 3px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+#dado-1 img, #dado-2 img, #dado-3 img, #dado-4 img, #dado-5 img,
+#dado-1-coincide img, #dado-2-coincide img, #dado-3-coincide img, #dado-4-coincide img, #dado-5-coincide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Indicación gráfica mediante id cuando el dado coincide con el número apostado */
+#dado-1-coincide, #dado-2-coincide, #dado-3-coincide, #dado-4-coincide, #dado-5-coincide {
+  border-color: var(--match-color);
+  background-color: var(--match-bg);
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+#resultados {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
