@@ -6,12 +6,35 @@
     <title>Práctica 30 - Apostar a los dados</title>
 </head>
 <body>
-<header>
-    <h1></h1>
-</header>
-<main>
-    
-</main>
+<div id="contenedor-principal">
+    <header id="encabezado">
+      <h1>Práctica 30: Apostar a los dados </h1>
+    </header>
+
+    <main id="tarjeta-juego">
+      <div id="panel-controles">
+        <p><strong>Elige un número del 1 al 6 para apostar:</strong></p>
+
+        <!-- Botones -->
+        <div id="grupo-botones">
+          <button type="button" id="btn-dado-1">1</button>
+          <button type="button" id="btn-dado-2">2</button>
+          <button type="button" id="btn-dado-3">3</button>
+          <button type="button" id="btn-dado-4">4</button>
+          <button type="button" id="btn-dado-5">5</button>
+          <button type="button" id="btn-dado-6">6</button>
+        </div>
+
+        <button type="button" id="btn-tirar">Tirar los 5 Dados</button>
+      </div>
+
+      <!-- Contenedor donde se mostrarán los 5 dados tirados -->
+      <div id="dados"></div>
+
+      <!-- Mensaje con el resultado del juego -->
+      <div id="resultados"></div>
+    </main>
+  </div>
 <footer><p>Hecho por Manuel Yujra</p></footer>
 <script src=""></script>
 </body>
