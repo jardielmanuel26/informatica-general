@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/estilos.css" rel="stylesheet">
+    <title>Práctica 32 - Adivinar el Número</title>
+</head>
+<body>
+
+    <h1> Juego: Adivinar el número</h1>
+    <p>He pensado un número al azar entre 1 y 100. ¡Tienes 10 intentos para adivinarlo!</p>
+
+   <!-- Formulario para ingresar el intento -->
+    <div>
+        <label for="numeroUsuario">Ingresa tu número: </label>
+        <input type="number" id="numeroUsuario">
+        <button id="btnAdivinar">Adivinar</button>
+    </div>
+
+    <!-- Áreas para mostrar mensajes y el estado de los intentos -->
+    <h3 id="mensaje"></h3>
+    <p id="intentosRestantes">Intentos restantes: 10</p>
+
+    <!-- Botón para reiniciar el juego -->
+    <button id="btnReiniciar">Jugar de nuevo</button>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
